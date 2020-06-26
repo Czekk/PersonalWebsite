@@ -1,0 +1,206 @@
+body {
+	 background-color:ivory;
+}
+
+.top-bar{
+	background-color: black;
+	overflow:hidden;
+	width: 100%;
+	box-shadow: 10px 10px 5px grey;
+	border-radius:5px;
+	position:relative;
+	z-index:1;
+	padding:10px;
+	
+}
+	.top-bar a{
+			color:white;
+			float: left;
+		  text-align: center;
+		  padding: 10px 12px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  z-index:1;
+		  width: 20%;
+		  position:relative;
+		  margin-left:20px;
+	}
+	
+	.top-bar a:HOVER {
+		color:azure;
+		box-shadow: 10px 10px 5px grey;
+		border-radius:5px;
+		font-size: 20px;
+		text-decoration: underline;
+	}
+	.top-bar a.active {
+		color:azure;
+		box-shadow: 10px 10px 5px grey;
+		border-radius:5px;
+		font-size: 18px;
+		text-decoration: none;
+	}
+		
+		
+.side-menu{
+	
+
+	height:0px;
+	background-color:white;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 0 5px 5px 0;
+	
+	margin-top:10px;
+	 width: 25%;
+		  position:relative;
+}
+
+
+	.side-menu a{
+	position: relative;
+	left: -20px;
+	transition: 0.3s;
+	padding-left: 100px;
+	padding: 10px;
+	margin:20px;
+	width: 75%;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	border-radius: 0 5px 5px 0;
+	background-color:cornsilk;
+	display:block;
+	box-shadow: 10px 10px 5px grey;
+	top:20px;
+	}
+	.side-menu a:hover {
+		left: 10px;
+		background-color:black;
+		font-size: 25px;
+		padding: 15px;
+		margin: 25px;
+		color:white;
+	}
+	.side-menu a.active {
+	background-color: floralwhite;
+	color: darkgreen;
+	padding: 20px;
+	left: 5px;
+	font-size: 25px;
+	
+	}
+	@media screen and (max-width: 700px) {
+  .side-menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .side-menu a {float: left;}
+  div.main-note {margin-left: 0;}
+  div.sub-note{margin-left:0}
+}
+
+@media screen and (max-width: 400px) {
+  .side-menu a {
+    text-align: center;
+    float: none;
+  }
+}
+.main-note {
+	background-color: white;
+	width:72%;
+	top:20px;
+	float:right;
+	
+	padding: 10px;
+	position:relative;
+	box-shadow: 10px 10px 5px grey;
+	
+}
+.sub-note {
+	background-color: lightgray;
+	width:72%;
+	top:50px;
+	float:right;
+	overflow:hidden;
+	margin-top:10px;
+	padding: 10px;
+	position:relative;
+	box-shadow: 10px 10px 5px grey;
+
+}	
+.main-note a{
+	position:relative;
+	left:420px; 
+	border:3px solid gray;
+	padding:5px 30px;
+	text-decoration:none;
+	background-color:mistyrose;
+	border-radius:5px;
+	color:indigo;
+	width:100%;
+	font-size:20px;
+
+
+}
+.ad-outer {
+	background-color: Yellow;
+	position:relative;
+	width:150px;
+	height: 300px;
+	bottom:-280px;
+	text-align: center;;
+	font-size: 20px;
+	padding-top:20px;
+}
+.ad-inner {
+	background-color: green;
+	transition: 2s;
+	border-radius: 180px;
+	animation-name: myAnime;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-decoration: none;
+}
+.ad-inner:hover{
+	font-size: 30px;
+	width:20px;
+	height: 20px;
+	transition: .5s;
+	color: white;
+}
+@keyframes  myAnime{
+	0%   {background-color:red;}
+  
+  50%  {background-color:yellow; border-radius: 120px;}
+  
+  100% {background-color:red; border-radius: 100px;}
+}
+
+
+.sub {
+	font-size: 16px;
+	padding: 5px;
+	margin: 2px;
+	background-color: red;
+	transition: 2s;
+	border-radius: 100px;
+	animation-name: myAnimeSub;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes  myAnimeSub{
+	0%   {background-color:red;}
+  25%  {background-color:green; border-radius: 200px;margin:0px;}
+  50%  {background-color:blue; border-radius: 220px;margin:2px;}
+  75%  {background-color:yellow; border-radius: 200px;margin:0px;}
+  100% {background-color:red; border-radius: 180px;margin:4px;}
+}
+footer {
+	background-color: #333;
+  overflow: hidden;
+  position: relative;
+  bottom: -200px;
+  width: 100%;	
+}
